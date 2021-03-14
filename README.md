@@ -16,7 +16,7 @@ The project provides statistical data of bikeshare in some cities in the US, nam
 * washington.csv
 
 ### Credits
-* Udacity
+* [Udacity](udacity.com)
 * [Converting seconds to hours, minutes, and seconds](https://stackoverflow.com/questions/775049/how-do-i-convert-seconds-to-hours-minutes-and-seconds/775075)
 * [Joining text from two columns into a single column](https://cmdlinetips.com/2018/11/how-to-join-two-text-columns-into-a-single-column-in-pandas/)
 * [Rounding to 2 decimals](https://stackoverflow.com/questions/20457038/how-to-round-to-2-decimals-with-python)
