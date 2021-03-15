@@ -124,12 +124,10 @@ def station_stats(df):
     start_time = time.time()
 
     # display most commonly used start station
-    popular_start_station = df['Start Station'].mode()[0]
-    print('Most commonly used start station: {}'.format(popular_start_station))
+    print('Most commonly used start station: {}'.format(df['Start Station'].mode()[0]))
 
     # display most commonly used end station
-    popular_end_station = df['End Station'].mode()[0]
-    print('Most commonly used end station: {}'.format(popular_end_station))
+    print('Most commonly used end station: {}'.format(df['End Station'].mode()[0]))
 
     # display most frequent combination of start station and end station trip
     df['station_combination'] = 'Start from ' + df['Start Station'] + ' and end at ' + df['End Station']
@@ -220,6 +218,8 @@ def raw_data(df):
     a = 0
     b = 5
     while raw_data == 'yes':
+        pd.set_option('display.max_columns',200)
+        pd.set_option('display.max_colwidth',100)
         print(df.iloc[a:b])
         a += 5
         b += 5
