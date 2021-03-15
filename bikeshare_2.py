@@ -220,6 +220,8 @@ def raw_data(df):
     a = 0
     b = 5
     while raw_data == 'yes':
+        pd.set_option('display.max_columns',200)
+        pd.set_option('display.max_colwidth',100)
         print(df.iloc[a:b])
         a += 5
         b += 5
